@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/* Colours:
+ primary colours */
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(175, 100%, 50%);
+
+  /* Neutral */
+
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Typography */
+
+  --paragraph: 18px;
+
+  --font-family: "Outfit", sans-serif;
+  --font-wt-300: 300;
+  --font-wt-400: 400;
+  --font-wt-600: 600;
+}
+
+/* Projects starts here: */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  align-items: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  font-size: var(--paragraph);
+  padding: 3.5rem 1.5rem;
+  background: var(--main-bg);
+  color: var(--White);
+  height: 200vh;
+}
+
+.nft__card {
+  background: var(--card-bg);
+  border-radius: 1.5rem;
+  box-shadow: 30px 30px 55px 40px rgba(0, 0, 0, 0.32);
+  padding: 1.5rem;
+  width: 100%;
+  font-weight: var(--font-wt-300);
+}
+
+.img__container {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 0.625rem;
+}
+
+/* hover state for equilibrium image and heading */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 99%;
+  border-radius: 0.625rem;
+  transition: opacity 0.5s ease-in;
+  background: hsl(175, 100%, 50%, 0.65);
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* hover state for heading, paragraph, icons and text */
+
+h2 {
+  font-weight: var(--font-wt-600);
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  margin-top: 1rem;
+}
+.active:hover {
+  color: var(--Cyan);
+}
+
+.nft__card ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--Soft-blue);
+}
+
+.nft__card p {
+  color: var(--Soft-blue);
+  margin: 1rem 1.5rem 0.5rem 0;
+  line-height: 1.5rem;
+}
+
+.nft__card ul li {
+  display: flex;
+  align-items: center;
+}
+
+.nft__card ul li img {
+  margin-right: 0.25rem;
+  height: 1rem;
+}
+
+.nft__card ul li:nth-child(1) {
+  color: var(--Cyan);
+  font-weight: var(--font-wt-600);
+}
+
+.nft__card ul li:nth-child(2) {
+  color: var(--Soft-blue);
+  font-weight: var(--font-wt-600);
+}
+
+.avatar__img {
+  padding: 1rem 1rem 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.avatar__img > img {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 2rem;
+}
+
+/* hover state for avatar name  */
+
+.avatar__txt > p > span {
+  cursor: pointer;
+  color: var(--Cyan);
+  transition: 0.5s ease-in-out;
+}
+
+.avatar__txt > p {
+  padding-left: 1.25rem;
+  font-weight: var(--font-wt-400);
+}
+.avatar__txt > p > span {
+  color: var(--White);
+  font-weight: var(--font-wt-300);
+  margin-left: 0.25rem;
+}
+
+.attribution {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+/* Tablet view and Desktop view */
+
+@media screen and (min-width: 700px) {
+  .nft__card {
+    box-shadow: 5px 5px 35px 15px rgba(0, 0, 0, 0.322);
+    max-width: 60%;
+  }
+}
