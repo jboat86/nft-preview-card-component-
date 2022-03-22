@@ -56,22 +56,19 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### What I learned
 
 Firstly, I named my classes using BEM to get started with using this naming convention. This is because i personally find its a neat naming convention tool to use, and also make your code more readable.
-
 `html`BEM naming convention example:
 <div class="avatar__img">       
 
-```
 `CSS` centering icons
 I learnt how to center the view icon when placed in a container (overlay); code shown below:
 
-```
 .overlay__img {
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
-```
+
 
 ### Continued development
 
