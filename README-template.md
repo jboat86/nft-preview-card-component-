@@ -82,7 +82,7 @@ For my future projects i will start to use css preprocessor such as Sass to chal
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Jennifer Boateng- Netlify](https://nft-preview-card-component86.netlify.app/)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
