@@ -65,12 +65,14 @@ Firstly, I named my classes using BEM to get started with using this naming conv
 `CSS` centering icons
 I learnt how to center the view icon when placed in a container (overlay); code shown below:
 
-.overlay\_\_img {
+```
+.overlay__img {
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
+```
 
 ### Continued development
 
